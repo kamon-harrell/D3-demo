@@ -6,6 +6,8 @@ function makeCircle() {
       .data(theData)
       .enter()
       .append("p")
-      .text( function(d) { return d; } )
+      .text( function(d,i) {
+        return "i = " + i + " d = " + d
+      })
 
 }
